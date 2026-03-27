@@ -3,8 +3,12 @@ import {authService} from "./auth.service.js"
 
 export const authController = {
   signup(req: Request , res: Response) {
-    const output = authService.signup();
-    res.send(output);
-  }
+    const signin = authService.signup();
+    res.send(signin); 
+  },
+   login(req: Request , res: Response) {
+    const login = authService.login();
+    res.send(login);
+    }
   
 }

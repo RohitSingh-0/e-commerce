@@ -1,5 +1,8 @@
 export const authService = {
     signup() {
-        return "signUp working";
+        return "signup working";
+    },
+    login() {
+        return  "Login working"
     }
 }
