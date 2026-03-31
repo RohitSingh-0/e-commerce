@@ -9,6 +9,13 @@ app.get("/", (req, res) => {
 
 app.use("/auth", router);
 
+const p = new Promise((resolve, reject) => {
+  resolve(10);
+});
+p.then((value) => {
+  console.log(value); // 10
+});
+
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
